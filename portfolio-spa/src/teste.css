@@ -1,0 +1,257 @@
+:root {
+  --navegar: #149ddd;
+  --primaria: #4f46e5;
+  --secundaria: #7c3aed;
+  --terciaia: #140041;
+  --escuro: #0f172a;
+  --maisescuro: #0a0f1c;
+  --claro: #e2e8f0;
+  --vidro: rgba(255, 255, 255, 0.5);
+  --navegacao-gradiente: linear-gradient(to left, rgba(79, 70, 229, 0.5), rgba(124, 58, 237, 0.8), rgba(15, 23, 42, 2.0));
+  --body-gradiente: linear-gradient(to left, rgba(79, 70, 229, 0.5), rgba(86, 19, 203, 0.925), rgba(15, 23, 42, 2.0));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.colorNavBar {
+  background: var(--navegacao-gradiente);
+}
+
+.App-header a {
+  font-size: 20px;
+}
+
+.navbar-brand {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block !important;
+  color: var(--claro);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background: var(--vidro);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.Foto-Perfil {
+  background: var(--escuro);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: relative !important;
+  }
+
+  .container {
+    padding-top: 20px !important;
+  }
+
+  .minhaFoto {
+    width: 250px !important;
+    height: 250px !important;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+.minhaFoto {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.Sublinhado {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.Sublinhado::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: var(--navegacao-gradiente);
+  border-radius: 999px;
+}
+
+.card {
+  background: #1e293b;
+  border: 2px solid #3b82f6 !important;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease !important;
+}
+
+.card:hover {
+  border-color: var(--secundaria) !important;
+  box-shadow: 0 10px 25px rgba(245, 158, 11, 0.2) !important;
+  transform: translateY(-2px) !important;
+}
+
+.card-body {
+  background: #0f172a;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-title {
+  color: var(--claro) !important;
+}
+
+.card-text {
+  color: var(--claro);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Responsividade melhorada */
+@media (max-width: 640px) {
+  #projetos {
+    padding: 2rem 1rem;
+  }
+
+  .card-body {
+    padding: 1.25rem;
+  }
+
+  .card img {
+    height: 180px;
+  }
+}
+
+
+/* Garante que as imagens não ultrapassem o container */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nomeCargo {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.dataCargo {
+  color: gray;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.listaCargo {
+  padding-left: 1.5rem;
+  /* recuo dos itens */
+}
+
+.responsabilidadesCargo {
+  margin-bottom: 0.5rem;
+}
+
+.listaCargo {
+  list-style: disc;
+  /* traz as bolinhas de volta */
+  padding-left: 0;
+}
+
+.listaCargo li {
+  text-align: center;
+  list-style-position: inside;
+  /* faz a bolinha aparecer dentro, e centraliza melhor */
+}
+
+.card-certificados {
+  background: var(--primaria);
+  color: var(--claro);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.certificado-tittle {
+  font-size: 20px;
+}
+
+.card-certificados:hover {
+  transform: translateY(5px);
+}
+
+.certificado-button {
+  border-radius: 20px;
+
+}
+
+.card-sobreMim {
+  border-radius: 20px;
+  background: var(--secundaria);
+  color: var(--claro);
+  border: 2px solid var(--terciaia);
+  transition: all 0.3s ease;
+}
+
+.card-sobreMim:hover {
+  transform: translateX(5px);
+  transform: translateY(5px);
+}
+
+.card-profissao {
+  border-radius: 20px;
+  background: var(--secundaria);
+  color: var(--claro);
+  border: 2px solid var(--terciaia);
+  transition: all 0.3s ease;
+}
+
+.card-profissao:hover {
+  transform: translateX(5px);
+  transform: translateY(5px);
+}
+

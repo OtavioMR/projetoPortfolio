@@ -1,0 +1,42 @@
+:root {
+  --fundoCards: #252C3D;
+  --navegar: #149ddd;
+  --primaria: #4f46e5;
+  --secundaria: #7c3aed;
+  --terciaia: #140041;
+  --escuro: #0f172a;
+  --maisescuro: #0a0f1c;
+  --claro: #e2e8f0;
+  --vidro: rgba(255, 255, 255, 0.5);
+  --navegacao-gradiente: linear-gradient(to left, rgba(79, 70, 229, 0.5), rgba(124, 58, 237, 0.8), rgba(15, 23, 42, 2.0));
+  --body-gradiente: linear-gradient(to left, rgba(79, 70, 229, 0.5), rgba(86, 19, 203, 0.925), rgba(15, 23, 42, 2.0));
+}
+
+.container {
+    height: 1000vh;
+}
+
+.cardLogin {
+    display: flex;
+    flex-direction: column; /* para alinhar o form verticalmente */
+    justify-content: center;
+    align-items: center;
+    background: var(--fundoCards) !important;
+    border-radius: 20px !important;
+    border: solid 2px var(--claro) !important;
+    max-width: 400px;   /* limite a largura máxima */
+    width: 100%;        /* para ficar responsivo */
+    margin: 0 auto;     /* centralizar horizontalmente */
+    padding: 2rem !important; /* ajuste interno */
+}
+
+input {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 2px;
+}
+
+.botaoEnviar {
+    width: 50%;
+    border-radius: 20px;
+}

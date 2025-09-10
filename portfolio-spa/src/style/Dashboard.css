@@ -1,0 +1,29 @@
+.fotoPerfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.semFoto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* só para a foto */
+    background-color: #ccc;
+    /* só para .semFoto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+}
+
+.competenciaCargo{
+    flex-direction: column;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
