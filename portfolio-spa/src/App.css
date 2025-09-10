@@ -200,7 +200,7 @@ li {
 }
 
 .flex-grow-1 {
-  padding-bottom: 2rem; /* Espaço antes do footer */
+  padding-bottom: 2rem; /* Espaço antes do footer  */
   margin-top: 80px; /* Compensa a navbar fixa */
 }
 
