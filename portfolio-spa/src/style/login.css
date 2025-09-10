@@ -26,7 +26,7 @@
     border: solid 2px var(--claro) !important;
     max-width: 400px;   /* limite a largura máxima */
     width: 100%;        /* para ficar responsivo */
-    margin: 0 auto;     /* centralizar horizontalmente */
+    margin: 0 auto;     /* centralizar horizontalmente  */
     padding: 2rem !important; /* ajuste interno */
 }
 
