@@ -16,6 +16,8 @@
 .env.test.local
 .env.production.local
 .env   # <-- adicionado para ignorar o seu .env do Firebase
+portfolio-spa/.env
+
 
 npm-debug.log*
 yarn-debug.log*
